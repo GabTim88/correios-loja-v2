@@ -1,0 +1,186 @@
+*{
+    padding: 0;
+    margin: 0; 
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+:root {
+    --azul: #0070ad;
+    --azul-escuro: #003157;
+    --cinza-claro: #E9ECEF;
+    --cinza-escuro: #555577;
+    --amarelo: #ffd400;
+    --amarelo2: #FFE600;
+    --bronze: #d09910; 
+    --altura-menu: 3rem;
+    --fundo: white;
+
+}
+
+h1, h2, h3, h4, h5, h6{
+    color: #003c6c;
+    font-weight: bolder;
+    letter-spacing: 0px;
+    line-height: 1em;
+
+}
+
+ul {
+    list-style-type: none;
+    display: inline;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+  padding: 5px 0px;
+}
+
+button a:link, a:visited, a:hover {
+  text-decoration: none;
+  color: white;
+}
+
+
+#menu {
+    background-color: #F5F3F0;
+    border-bottom: 1px solid var(--amarelo);   
+    padding: 3px 0px;
+    font-size: 1em;
+}
+
+
+#menu > li {
+    display: block;
+    text-decoration: none;
+    text-align: center; 
+    padding: 0px 0px;
+
+}
+
+.navbar {
+    margin-bottom: 0;
+    z-index: 9999;
+    border: 0;
+    font-size: 14px !important;
+    letter-spacing: 4px;
+    border-radius: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;  
+  }
+
+  .navbar li a, .navbar .navbar-brand {
+    color: var(--azul-escuro);
+  }
+
+  .navbar-nav li a:hover, .navbar-nav li.active a {
+    color: var(--bronze);
+    background-color: var(--cinza-claro)
+
+  }
+  .navbar-default .navbar-toggle {
+    border-color: transparent;
+    color: var(--azul-escuro)
+  }
+
+
+  .carousel-control {
+    background-image: none;
+
+  }
+
+
+main {
+    display: block;
+    max-width: 1920px;
+    margin: auto;
+    padding: 16px;
+}
+
+main #banners {
+    max-width: 1920px;
+    margin: auto;
+}
+
+
+
+#ofertas #serviços #rodape-content #pagina-carrinho{
+    max-width: 1580px;
+}
+
+#serviços {
+    background-color: #0070ad;
+}
+
+.caixas {
+  max-width: 440px;
+  padding: 0;
+}
+
+/*index*/
+#ofertas .card {
+  border-radius: 10px;
+  border-style: none;
+  box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.2);
+  margin: 20px 0px;
+}
+
+/*Produtos*/
+#pagina-descricao button .btn a:link, a:visited {
+  text-decoration: none;
+  color: white;
+}
+
+
+/*Carrinho*/
+#progress-carrinho {
+  height: 30px;
+}
+
+#pagina-carrinho h5 {
+  color: black;
+  font-size: 16px;
+}
+
+#pagina-carrinho p {
+  color: black;
+  font-size: 14px;
+}
+
+#pagina-carrinho button a:link, a:visited, a:hover {
+  text-decoration: none;
+  color: #0069d9;
+}
+
+#links h3 {
+    border-bottom: 4px solid #ffd400;  
+}
+
+
+#rodape-content {
+    background-color: #ffd400;
+
+}
+
+#rodape-content li{
+  padding: 5px 0px;
+
+}
+
+
+  @media screen and (max-width: 768px) {
+    .col-sm-4 {
+      text-align: center;
+      margin: 25px 0;
+    }
+    .btn-lg {
+      width: 100%;
+      margin-bottom: 35px;
+    }
+  }
+  @media screen and (max-width: 480px) {
+    .logo {
+      font-size: 150px;
+    }
+  }

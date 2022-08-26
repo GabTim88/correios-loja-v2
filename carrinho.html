@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Meu CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <title>Carrinho correios</title>
+    <link rel="icon" type="image/x-icon" href="img/correios-icon.png">
+</head>
+<body id="pagina-carrinho" data-spy="scroll" data-target=".navbar" data-offset="60">
+
+    <!--Barra de navegação-->   
+    <nav id="menu" class="navbar navbar-expand-sm navbar-top">
+        <div class="container">
+            
+                <a class="navbar-brand" href="https://www.correios.com.br">
+                    <img src="img/logotipo.png" alt="Logotipo dos Correios" style="max-width: 150px; margin-top: -10px;"></a>
+              
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#itens-menu">                          
+              <span class="navbar-toggler-icon"></span>
+            </button> 
+
+                <div class="collapse navbar-collapse justify-content-end" id="itens-menu">
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a class="nav-link" href="#loja">A Loja</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#produtos">Produtos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#atendimento">Atendimento</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#meuscorreios">Meus Correios</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#busca">Busca</a></li>
+                    </ul>
+                </div>
+            
+        </div>
+      </nav>
+
+    <main>
+
+        <div class="container">
+
+            <div id="progress-carrinho" class="progress my-5">
+                <div class="progress-bar" style="width:20%">
+                  Carrinho
+                </div>
+                <div class="progress-bar bg-light" style="width:20%; color: gray;">
+                  Identificação
+                </div>
+                <div class="progress-bar bg-light" style="width:20%; color: gray;">
+                  Pagamento
+                </div>
+                <div class="progress-bar bg-light" style="width:20%; color: gray;">
+                    Confirmação
+                </div>
+                <div class="progress-bar bg-light" style="width:20%; color: gray;">
+                    Conclusão
+                </div>
+              </div>
+
+            <!--Busca Cep-->
+            <div class="card p-4 my-4">
+                <div class="col-sm-8">
+                    <form class="form-inline" action="#">
+                        <label for="buscacep" class="mx-3"><strong>Digite seu CEP:</strong></label>
+                        <input type="buscacep" class="form-control" placeholder="00000-000" id="buscacep">
+                        <button type="submit" class="btn btn-primary mx-3">Buscar Endereço</button>
+                      </form>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="row">
+                    <!--Produto-->
+                    <div class="card col-sm-7 p-4 my-4 mr-4">
+                        <div class="row">
+                            <div class="container">
+                                <h4 class="mb-4">Produto e Frete</h4>
+                                <div class="row justify-content">
+                                    <div class="col">
+                                            <img src="img/produto-exemplo.png" alt="" width="150px" >
+                                    </div>
+                                    <div class="col">
+                                        <h5>Nome do Produto</h5>
+                                        <p>Selo exemplo</p>
+                                    </div>
+                                    <div class="col">
+                                        <h5>Quantidade</h5>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control text-center" placeholder="1" name="text1" style="width: 40px;">
+                                            </div>
+                                    </div>
+                                    <div class="col">
+                                        <h5>Preço</h5>
+                                        <p><strong>R$0,00</strong></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--Preço total-->
+                    <div class="card col-sm-4 p-4 my-4 ml-4">
+                        <h4 class="mb-4">Total</h4>
+                        <p>Valor dos produtos:  R$0,00</p>
+                        <p>Frete:  R$0,00</p>
+                        <p>Valor Total:  <strong>R$0,00</strong></p>
+
+                        <button class="btn btn-primary mb-3">Finalizar Compra</button>
+                        <button class="btn btn-outline-primary"><a href="index.html">Continuar Comprando</a></button>
+                    </div>
+
+                </div>
+            </div>
+
+
+        </div>
+
+    </main>
+
+    <footer>
+        <div id="rodape-content" class="container-fluid">
+            <div class="container pt-5">
+                <div class="row">
+                    <div class="col-sm-4">
+                        <h2>Fale Conosco</h2>
+                        <ul>
+                            <li>Registro de Manifestações</li>
+                            <li>Central de Atendimento</li>
+                            <li>Soluções para o seu negócio</li>
+                            <li>Suporte ao cliente com contrato</li>
+                            <li>Ouvidoria</li>
+                            <li>Denúncia</li>
+                        </ul>
+                    </div>
+
+                    <div class="col-sm-4">
+                        <h2>Sobre os Correios</h2>
+                        <ul>
+                            <li>Identidade Corporativa</li>
+                            <li>Educação e Cultura</li>
+                            <li>Código de Conduta Ética e Integridade</li>
+                            <li>Transparência e prestação de contas</li>
+                            <li>Política de Privacidade e Cookies</li>
+                        </ul>
+                    </div>
+
+                    <div class="col-sm-4">
+                        <h2>Outros Sites</h2>
+                        <ul>
+                            <li>Portal Correios</li>
+                            <li>Postalis</li>
+                            <li>Postal Saúde</li>
+                        </ul>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+        </div>
+    </footer>
+    
+</body>
+</html>

@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Meu CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <title>Descrição do Produto</title>
+    <link rel="icon" type="image/x-icon" href="img/correios-icon.png">
+</head>
+<body id="pagina-descricao" data-spy="scroll" data-target=".navbar" data-offset="60">
+    <header>
+    <!--Barra de navegação-->   
+    <nav id="menu" class="navbar navbar-expand-sm navbar-top">
+        <div class="container">
+            
+                <a class="navbar-brand" href="https://www.correios.com.br">
+                    <img src="img/logotipo.png" alt="Logotipo dos Correios" style="max-width: 150px; margin-top: -10px;"></a>
+              
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#itens-menu">                          
+              <span class="navbar-toggler-icon"></span>
+            </button> 
+
+                <div class="collapse navbar-collapse justify-content-end" id="itens-menu">
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a class="nav-link" href="#loja">A Loja</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#produtos">Produtos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#atendimento">Atendimento</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#meuscorreios">Meus Correios</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#busca">Busca</a></li>
+                    </ul>
+                </div>
+            
+        </div>
+      </nav>
+    </header>
+    
+    <main>
+        <section id="descricao-produto">
+            <div class="container-fluid">
+               
+                <div class="container">
+                    <h2 class="my-4"><strong>Título/nome do produto com mais informações.</strong></h2>
+                    
+                    <div class="row">
+                        <div class="col-sm-6 mt-4">
+                            <img src="img/produto-exemplo.png" alt="produto" style="border-radius: 10px; box-shadow: 5px 8px 10px rgba(0, 0, 0, 0.1);">
+                        </div>
+
+                        <div class="col-sm-6">
+                            <div class="card-body">
+                                <h2 class="card-title" style="color: #d09910;"><strong>Preço: R$0,00</strong></h2>
+                                <p class="card-text">Esta emissão celebra os duzentos anos de nascimento de uma mulher que foi eternizada como uma heroína em dois continentes por seus feitos. A arte do selo é uma composição de Anita Garibaldi em suas múltiplas facetas: a mulher, a guerreira, a mãe. Há também o desenho de uma rosa, símbolo de Anita. Foram usadas três cores, que, em conjunto com a cor do papel, representam o Brasil, país de nascimento de Anita, e Itália, que a reconhece e a seu companheiro Giuseppe Garibaldi como heróis responsáveis pela unificação do país. A técnica usada foi computação gráfica e impressão calcográfica (intaglio).</p>
+                                <p><strong>Opções de pagamento:</strong> Á vista via boleto, contrato ou parcelado.</p>
+                            
+                                <button class="btn btn-primary btn-lg" style="margin-top: 20px; "><a href="carrinho.html">Comprar</a></button>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Descrição do produto-->
+                <div class="container my-4">
+                    <div id="accordion">
+
+                        <!--Características Técnicas-->
+                        <div class="card">
+                          <div class="card-header">
+                            <a class="card-link" data-toggle="collapse" href="#collapseOne">
+                              <strong>Características Técnicas</strong>
+                            </a>
+                          </div>
+                          <div id="collapseOne" class="collapse show" data-parent="#accordion">
+                            <div class="card-body">
+                                <p>Departamento/Seção: 	Emissões | Anos Anteriores - 2021 - Folhas.</p>
+                                <p>Código: 2690916 - 852013361</p>
+                                <p>Peso: 10 gramas</p>
+                                <p>Peso cúbico: 0 gramas </p>
+                            </div>
+                          </div>
+                        </div>
+                        
+                        <!--Informações Adicionais-->
+                        <div class="card">
+                          <div class="card-header">
+                            <a class="collapsed card-link" data-toggle="collapse" href="#collapseTwo">
+                                <strong>Informações Adicionais</strong>
+                            </a>
+                          </div>
+                          <div id="collapseTwo" class="collapse" data-parent="#accordion">
+                            <div class="card-body">
+                                <p>Informações Técnicas: EDITAL 11/2021</p>
+                                <p>Papel: couchê gomado</p>
+                                <p>Tiragem: 120.000 selos</p>
+                                <p>Valor facial: R$3,55 </p>
+                                <p>Locais de lançamento: Brasília/DF, Florianópolis/SC e Laguna/SC</p>
+                                <p>Processo de impressão: calcografia</p>
+                                <p>Data da emissão: 30/08/2021</p>
+                                <p>Artista: José Carlos Braga</p>
+                            </div>
+                          </div>
+                        </div>
+
+                        <!--Avaliações-->
+                        <div class="card">
+                            <div class="card-header">
+                              <a class="collapsed card-link" data-toggle="collapse" href="#collapseThree">
+                                  <strong>Avaliações</strong>
+                              </a>
+                            </div>
+                            <div id="collapseThree" class="collapse" data-parent="#accordion">
+                              <div class="card-body">
+                                  Avaliação de cliente
+                              </div>
+                            </div>
+                          </div>
+
+                          <!--Perguntas e Respostas-->
+                        <div class="card">
+                            <div class="card-header">
+                              <a class="collapsed card-link" data-toggle="collapse" href="#collapseFour">
+                                  <strong>Perguntas Frequentes</strong>
+                              </a>
+                            </div>
+                            <div id="collapseFour" class="collapse" data-parent="#accordion">
+                              <div class="card-body">
+                                  Perguntas frequentes
+                              </div>
+                            </div>
+                          </div>
+                </div>
+                
+            </div>
+        </section>
+
+        <section id="relacionados">
+            
+            <div class="container my-5">
+                <h2 class="text-center mb-3"><strong>Veja mais produtos</strong></h2>
+                <div class="row">
+                    <!--1 produto-->
+                    <div class="col-sm-4 col-xs-12">
+                        <div class="card shadow">
+                            <img class="card-img-top" src="img/produto-exemplo.png" alt="">
+    
+                            <div class="card-body">
+                                <h3>Emissão Conjunta Brasil - Uruguai</h3>
+                                <p>Bicentenário do Nascimento de Anita Garibaldi.</p>
+                                <button class="btn btn-primary btn-block"><a href="#">Saiba mais</a></button>
+                            </div>      
+                        </div>
+                    </div>
+
+                <!--2 produto-->
+                <div class="col-sm-4 col-xs-12">
+                    <div class="card shadow">
+                        <img class="card-img-top" src="img/produto-exemplo.png" alt="">
+
+                        <div class="card-body">
+                            <h3>Emissão Conjunta Brasil - Uruguai</h3>
+                            <p>Bicentenário do Nascimento de Anita Garibaldi.</p>
+                            <button class="btn btn-primary btn-block"><a href="#">Saiba mais</a></button>
+                        </div>      
+                    </div>
+                </div>
+
+                <!--3 produto-->
+                <div class="col-sm-4 col-xs-12">
+                    <div class="card shadow">
+                        <img class="card-img-top" src="img/produto-exemplo.png" alt="">
+
+                        <div class="card-body">
+                            <h3>Emissão Conjunta Brasil - Uruguai</h3>
+                            <p>Bicentenário do Nascimento de Anita Garibaldi.</p>
+                            <button class="btn btn-primary btn-block"><a href="#">Saiba mais</a></button>
+                        </div>      
+                    </div>
+                </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div id="rodape-content" class="container-fluid">
+            <div class="container py-4">
+                <div class="row">
+                    <div class="col-sm-4">
+                        <h2>Fale Conosco</h2>
+                        <ul>
+                            <li>Registro de Manifestações</li>
+                            <li>Central de Atendimento</li>
+                            <li>Soluções para o seu negócio</li>
+                            <li>Suporte ao cliente com contrato</li>
+                            <li>Ouvidoria</li>
+                            <li>Denúncia</li>
+                        </ul>
+                    </div>
+
+                    <div class="col-sm-4">
+                        <h2>Sobre os Correios</h2>
+                        <ul>
+                            <li>Identidade Corporativa</li>
+                            <li>Educação e Cultura</li>
+                            <li>Código de Conduta Ética e Integridade</li>
+                            <li>Transparência e prestação de contas</li>
+                            <li>Política de Privacidade e Cookies</li>
+                        </ul>
+                    </div>
+
+                    <div class="col-sm-4">
+                        <h2>Outros Sites</h2>
+                        <ul>
+                            <li>Portal Correios</li>
+                            <li>Postalis</li>
+                            <li>Postal Saúde</li>
+                        </ul>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+        </div>
+    </footer>
+</body>
+
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+
+</html>
